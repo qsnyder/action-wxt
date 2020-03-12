@@ -1,0 +1,11 @@
+name: "Post WxT"
+description: "Post Message to Webex Teams"
+author: "Quinn Snyder <qsnyder@cisco.com>"
+
+branding:
+  icon: "message-circle"
+  color: "white"
+
+runs:
+  using: docker
+  image: docker://qsnyder/action-wxt:0.1.0
