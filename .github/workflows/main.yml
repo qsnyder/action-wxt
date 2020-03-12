@@ -11,4 +11,4 @@ jobs:
         env:
           TOKEN: ${{ secrets.TOKEN }}
           ROOMID: ${{ secrets.ROOMID }}
-          MESSAGE: "${{ github.run_number }} completed successfully, triggered by commit SHA ${{ github.sha }}"
+          MESSAGE: "Run ${{ github.run_number }} completed successfully, triggered by user ${{ github.actor }} with commit SHA ${{ github.sha }}"
