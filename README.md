@@ -15,14 +15,19 @@ jobs:
     steps:
 
       - name: Post message to WxT
-        uses: qsnyder/action-wxt@v1
+        uses: qsnyder/action-wxt@master
         env:
-          TOKEN: ${{TOKEN}}
-          ROOMID: ${{ROOMID}}
-          MESSAGE: ${{MESSAGE}}
+          TOKEN: ${{ secrets.TOKEN }}
+          ROOMID: ${{ secrets.ROOMID }}
+          MESSAGE: <Insert plain or markdown-formatted text or GitHub environment variables>
 ```
 
 ## Environment variables to pass to container
+
+These are environment variables required by the container and are passed along.
+ENVs are in addition to the stock GitHub environment variables passed by actions into the container.
+
+It is recommended that for `$TOKEN` and `$ROOMID` variables, to use the "secrets" vault within the repository.
 
 Name | Description | Default | Required
 ---- | ----------- | ------- | --------
