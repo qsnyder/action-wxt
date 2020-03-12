@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Post message to WxT
-        uses: qsnyder/action-wxt@v0.1.0
+        uses: qsnyder/action-wxt
         env:
           TOKEN: ${{ secrets.TOKEN }}
           ROOMID: ${{ secrets.ROOMID }}
