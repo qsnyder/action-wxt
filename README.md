@@ -22,7 +22,7 @@ jobs:
           MESSAGE: ${{MESSAGE}}
 ```
 
-## env
+## Environment variables to pass to container
 
 Name | Description | Default | Required
 ---- | ----------- | ------- | --------
@@ -30,7 +30,7 @@ TOKEN | Bot bearer token| None | **Yes**
 ROOMID | RoomID to post to | None | **Yes**
 MESSAGE | Message to send (text or MD) | None | **Yes**
 
-## exec
+## Running command
 
 ```bash
 URL="https://api.ciscospark.com/v1/messages/"
