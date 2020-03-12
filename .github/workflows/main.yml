@@ -11,4 +11,4 @@ jobs:
         env:
           TOKEN: ${{ secrets.TOKEN }}
           ROOMID: ${{ secrets.ROOMID }}
-          MESSAGE: Testing post to WxT
+          MESSAGE: ${{ GITHUB_RUN_NUMBER }} completed successfully, triggered by commit SHA ${{ GITHUB_SHA }}
