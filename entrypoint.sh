@@ -27,7 +27,7 @@ _wxt_checks() {
 _wxt_message() {
   _wxt_checks
 
-  URL="https://api.ciscospark.com/v1/messages/"
+  URL="https://webexapis.com/v1/messages/"
 curl \
     -X POST \
     -H "Authorization:Bearer ${TOKEN}" \
